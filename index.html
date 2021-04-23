@@ -5,6 +5,7 @@
     <title>Jogo do Adivinha</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.svg" type="image/x-icon">
 </head>
 
 <body>
@@ -15,7 +16,7 @@
 
         <main>
             <div class="resum">
-                <p>Digite um número inteiro no intervalo de 0 e 10.</p>
+                <p>Digite um número inteiro no intervalo de 0 e 100.</p>
                 <p>Você tem <b id="tentativa">10</b> tentativas para acertar o valor</p>
             </div>
             <form action="#">
@@ -23,9 +24,9 @@
                 <button id="palpite" type="button" onclick="palpitar()">Palpitar</button>
             </form>
             <div id="info">
-                <p id="help"></p>
-                <p id="try"></p>
-                <p id="attempts"></p>
+                <p id="help" class="row"></p>
+                <p id="try" class="row"></p>
+                <p id="attempts" class="row"></p>
             </div>
         </main>
 
@@ -38,6 +39,7 @@
         </footer>
     </div>
     <script src="function.js"></script>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
 </body>
 
 </html>

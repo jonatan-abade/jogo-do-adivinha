@@ -29,7 +29,7 @@ main{
     margin: auto;
     box-shadow: 1px 1px 15px gray;
     border-radius: 25px;
-    height: 50vh;
+    height: 30vh;
     width: 50%;
     position: relative;
     background-color: white;
@@ -49,21 +49,81 @@ main form{
     margin-top: 50px;
 }
 
-main form button{
-    padding: 5px 10px;
+main form button {
+    padding: 6.5px 10px;
     font: normal 14pt arial;
+    background-color: #007eff;
+    color: white;
+    text-transform: uppercase;
+    border: unset;
+    border-radius: 0px 10px 10px 0;
 }
+
 main form input{
     padding: 5px 10px;
     font: normal 14pt arial;
 }
 
 div#info {
-    display: flex;
+    display: none;
     flex-direction: column;
-    margin: 0 auto;
-    padding-top: 25px;
+    margin: 25px auto 0 auto;
+    padding: 25px;
     width: 75%;
+    font: normal 14pt arial;
+    line-height: 200%;
+    border-radius: 5px;
+    color: white;
+    animation: bgMove 10s infinite;
+    animation-direction: alternate;
+}
+.row {
+    display: flex;
+    align-items: center;
+}
+ion-icon.heart.md.hydrated {
+    color: red;
+}
+ion-icon.locate-outline.md.hydrated {
+    color: black;
+}
+ion-icon.information-circle.md.hydrated {
+    color: #352a2a;
+}
+ion-icon {
+    margin-right: 5px;
+    font-size: 24px;
+}
+
+.result {
+    display: flex;
+    align-items: center;
+}
+
+.result ion-icon {
+    font-size: 65pt;
+    margin-right: 20px;
+}
+
+.result button {
+    padding: 5px 10px;
+    text-align: center;
+    color: white;
+    border: unset;
+    border-radius: 2px;
+    font-size: 16pt !important;
+    display: flex;
+    box-shadow: 1px 1px 40px #000000c7;
+}
+
+.result button ion-icon {
+    font-size: 16pt !important;
+}
+.result.lose button {
+    background-color: #dc1e41;
+}
+.result.win button {
+    background-color: green;
 }
 
 footer{
