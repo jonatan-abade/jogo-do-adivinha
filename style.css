@@ -67,7 +67,8 @@ main form input{
 div#info {
     display: none;
     flex-direction: column;
-    margin: 25px auto 0 auto;
+    margin: 50px auto 0 auto;
+    box-shadow: 0 0 35px #695959;
     padding: 25px;
     width: 75%;
     font: normal 14pt arial;
