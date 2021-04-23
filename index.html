@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+
+<head>
+    <title>Jogo do Adivinha</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="main">
+        <header>
+            <h1>Jogo do Adivinha</h1>
+        </header>
+
+        <main>
+            <div class="resum">
+                <p>Digite um número inteiro no intervalo de 0 e 10.</p>
+                <p>Você tem <b id="tentativa">10</b> tentativas para acertar o valor</p>
+            </div>
+            <form action="#">
+                <input type="number" placeholder="Digite o número aqui" id="numero" autofocus>
+                <button id="palpite" type="button" onclick="palpitar()">Palpitar</button>
+            </form>
+            <div id="info">
+                <p id="help"></p>
+                <p id="try"></p>
+                <p id="attempts"></p>
+            </div>
+        </main>
+
+        <footer>
+            <div class="inner-footer">
+                <p> created by Jonatan Abade</p>
+                <hr>
+                <p>2021 &copy; Full-Stack Web Developer</p>
+            </div>
+        </footer>
+    </div>
+    <script src="function.js"></script>
+</body>
+
+</html>

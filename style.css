@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: arial;
+}
+
+body{
+    animation: bgMove 10s infinite;
+    animation-direction: alternate;
+}
+
+@keyframes bgMove {
+    from {background-color: #9a00ff;}
+    to {background-color: #f39898;}
+  }
+
+h1 {
+    text-align: center;
+    /* background: -webkit-linear-gradient(#f39898, #9a00ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+    color: white;
+    font: bolder 36pt arial;
+    padding: 20px 0;
+}
+
+main{
+    display: block;
+    margin: auto;
+    box-shadow: 1px 1px 15px gray;
+    border-radius: 25px;
+    height: 50vh;
+    width: 50%;
+    position: relative;
+    background-color: white;
+    margin-top: 2.5%;
+}
+
+main .resum{
+    padding-top: 25px;
+    text-align: center;
+    font-size: 16pt;
+}
+
+main form{
+    text-align: center;
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+}
+
+main form button{
+    padding: 5px 10px;
+    font: normal 14pt arial;
+}
+main form input{
+    padding: 5px 10px;
+    font: normal 14pt arial;
+}
+
+div#info {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding-top: 25px;
+    width: 75%;
+}
+
+footer{
+    color: white;
+    position: absolute;   
+    width: 100%; 
+    padding: 5px 0;
+    bottom: 0;
+    background-color: #000000c7;
+}
+
+footer div.inner-footer{
+    width: 75%;
+    margin: 0 auto;
+}
+footer div.inner-footer p{
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 200%;
+}
