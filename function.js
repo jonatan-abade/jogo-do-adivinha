@@ -1,6 +1,8 @@
 
+//Gera um número aleatório que deve ser descoberto pelo usuário
 var numRandom = Math.round(Math.random() * (100 - 0) + 0)
 
+//Variavel que guarda quantidade de tentaticas e vetor que armazena os números tentatos
 var tentativas = 10
 var arrayTry = []
 
